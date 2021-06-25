@@ -1,0 +1,25 @@
+mat-toolbar {
+    background-color: #FFFFFF;
+    padding: 1rem;
+    color: #136FA1;
+}
+
+li {
+    list-style: none;
+    font-size: 1rem;
+    &>a {
+        cursor: pointer;
+        text-decoration: none;
+        // color: antiquewhite;
+        color:#136FA1;
+        margin: .5rem;
+        padding: 1rem;
+
+        &:hover {
+            // background-color:rgb(122, 122, 90);
+            background-color:#136FA1;
+            color: white;
+            border-radius: 5px;
+        }
+    }
+}

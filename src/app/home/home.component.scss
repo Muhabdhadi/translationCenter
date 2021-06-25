@@ -1,0 +1,127 @@
+.banner { 
+    background-color: #171717;
+    padding: 3rem;
+
+    &__text {
+        color:#ffff;
+        font-size: 2rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    &--span {
+        color: #136FA1;
+        font-size: 3rem;
+        font-style: italic;
+        font-family: 'Indie Flower', cursive;
+    }
+
+    &--margin-auto {
+        margin-left: auto
+    }
+}
+
+#whatWeDo {
+    padding: 4rem;
+    text-align: center;
+    .whatWeDo {
+        &__whatWeDo__heading {
+            font-weight: 600;
+            font-size: 2rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        &__feature {
+            cursor: pointer;
+            & > i {
+                font-size: 4rem;
+                color: #136FA1;
+            }
+
+            &__heading {
+                color: black;
+                font-size: 1.4em;
+                font-weight: 400;
+                margin-top: 1rem;
+            }
+
+            &--p {
+                color: #777;
+                line-height: 1.7rem;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.hr {
+    width: 5%;
+    margin: auto;
+    color: #136FA1;
+    height: 3px;
+}
+
+#WhyChooseUs {
+    background-color: #EFEFEF;
+    padding: 5rem;
+}
+
+.WhyChooseUs {
+    &__block {
+        & > i {
+            font-size: 1rem;
+            margin-right: 5px;
+            color: #136FA1;
+            margin-bottom: 2rem;
+        }
+        & > p {
+            font-size: 1.1rem;
+            font-weight: 400;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .banner { 
+        background-color: #171717;
+        padding: 3rem;
+    
+        &__text {
+            color:#ffff;
+            font-size: .8rem;
+            margin-right: 1px;
+            font-family: 'Montserrat', sans-serif;
+        }
+    
+        &--span {
+            color: #136FA1;
+            font-size: 1rem;
+            font-style: italic;
+            font-family: 'Indie Flower', cursive;
+        }
+    
+        &--margin-auto {
+            margin-left: auto
+        }
+    }
+
+    #WhyChooseUs {
+        background-color: #EFEFEF;
+        padding: 5rem;
+    }
+    
+    .WhyChooseUs {
+        &__block {
+            & > i {
+                font-size: 1rem;
+                margin-right: 5px;
+                color: #136FA1;
+                margin-bottom: 2rem;
+            }
+            & > p {
+                font-size: 12px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
