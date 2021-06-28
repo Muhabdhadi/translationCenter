@@ -225,6 +225,33 @@
     }
 }
 
+.learningLocalicationService {
+    &__heading {
+        font-size: 2rem;
+
+        &--span {
+            font-weight: bolder;
+        }
+    }
+
+    &__p {
+        font-size: 1rem;
+        color: #777;
+        line-height: 26px;
+        text-align: start;
+    }
+
+    &__icon {
+        width: 32px;
+        padding-top: .5rem;
+    }
+
+    &__icon--text {
+        font-size: 1.4rem;
+        margin-left: 1rem;
+    }
+}
+
 @media (max-width: 768px) {
     .linguisticAndTools {
         padding-left: 0;
@@ -241,5 +268,12 @@
         & .col-md-7 {
             margin-left: 8.3333333333%;
         }
+    }
+}
+
+@media (min-width: 430px) {
+    .learningLocalicationService {
+        padding-left: 6rem;
+        padding-right: 6rem;
     }
 }
