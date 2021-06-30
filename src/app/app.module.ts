@@ -12,6 +12,7 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { OurServicesComponent } from './our-services/our-services.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { OurServicesComponent } from './our-services/our-services.component';
     CarouselComponent,
     HomeComponent,
     FooterComponent,
-    OurServicesComponent
+    OurServicesComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,

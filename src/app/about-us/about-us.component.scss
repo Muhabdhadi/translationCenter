@@ -1,0 +1,42 @@
+.aboutus__breadcrumb {
+    background-color: black;
+    border-bottom: .3rem solid #777;
+    border-top: .2rem solid #777;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    & ul {
+        padding: 0;
+        list-style: none;
+        color: white;
+        cursor: pointer;
+        & li {
+            margin-right: 1rem;
+            padding-top: 1rem;
+            color: #136FA1;
+        }
+        & .active {
+            color: #777;
+        }
+    }
+
+    &__heading {
+        color: #fff;
+    }
+    
+}
+
+.aboutus__container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    &__heading {
+        color: #136FA1;
+        &--bold {
+            font-weight: bolder;
+        }
+    }
+
+    &__p {
+        color: #777;
+        line-height: 30px;
+    }
+}
