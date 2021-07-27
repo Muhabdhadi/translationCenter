@@ -4,14 +4,32 @@
             <div class="col-md-12 d-flex flex-row justify-content-between">
                 <img src="../../assets/images/logo.png" width="50px" class="img-fluid d-inline" alt="">
 
-                <ul>
-                    <li routerLink="home">Home</li>
-                    <li routerLink="aboutus">About Us</li>
-                    <li routerLink="services">Service</li>
-                    <li routerLink="contactus">Contact Us</li>
-                    <li>Join Us</li>
-                    <li><i class="fab fa-linkedin"></i></li>
-                </ul>
+                <div class="desktop-menu">
+                    <ul>
+                        <li routerLink="home">Home</li>
+                        <li routerLink="aboutus">About Us</li>
+                        <li routerLink="services">Service</li>
+                        <li routerLink="contactus">Contact Us</li>
+                        <li>Join Us</li>
+                        <li><i class="fab fa-linkedin"></i></li>
+                    </ul>
+                </div>
+
+
+
+                <i (click)="toggleMobileMenu()" class="fas fa-bars menu-icon"></i>
+
+                <div class="mobile-menu hidden">
+                    <ul>
+                        <li routerLink="home">Home</li>
+                        <li routerLink="aboutus">About Us</li>
+                        <li routerLink="services">Service</li>
+                        <li routerLink="contactus">Contact Us</li>
+                        <li>Join Us</li>
+                        <li><i class="fab fa-linkedin"></i></li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </div>
