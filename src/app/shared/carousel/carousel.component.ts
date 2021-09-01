@@ -11,7 +11,7 @@ export class CarouselComponent implements OnInit {
     {path: 'http://www.loc-pros.com/images/slider2.jpg'},
     {path: 'http://www.loc-pros.com/images/slider3.jpg'},
     {path: 'http://www.loc-pros.com/images/slider4.jpg'},
-]
+];
   constructor() { }
 
   ngOnInit(): void {

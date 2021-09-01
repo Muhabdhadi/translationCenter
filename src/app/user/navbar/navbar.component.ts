@@ -11,7 +11,7 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  toggleMobileMenu() {
+  toggleMobileMenu(): any {
     console.log('clicked');
     document.querySelector('.mobile-menu').classList.toggle('hidden');
   }
