@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {FormBuilder} from '@angular/forms';
+import {ReqService} from '../admin/services/req.service';
 
 @Component({
   selector: 'app-contact-us',
@@ -6,10 +8,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact-us.component.scss']
 })
 export class ContactUsComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+contactUsForm;
+  constructor(private fb: FormBuilder, private reqService: ReqService) {
+    this.contactUsForm = this.fb.group({
+      name: '',
+      email: '',
+      subject: '',
+      message: ''
+    });
   }
 
+  ngOnInit(): void {}
+
+  submit(): void {
+    this.reqService.postContactUs(this.contactUsForm.value).subscribe();
+  }
 }

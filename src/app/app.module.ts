@@ -14,6 +14,12 @@ import { FooterComponent } from './footer/footer.component';
 import { OurServicesComponent } from './our-services/our-services.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { HttpClientModule } from '@angular/common/http';
+import {ReactiveFormsModule} from '@angular/forms';
+/** Admin Components */
+import { DashboardComponent} from './admin/dashboard/dashboard.component';
+import { AContactUsComponent} from './admin/dashboard/a-contact-us/a-contact-us.component';
+import { AContactUsDetailsComponent} from './admin/dashboard/a-contact-us/a-contact-us-details/a-contact-us-details.component';
 
 
 @NgModule({
@@ -25,7 +31,10 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     FooterComponent,
     OurServicesComponent,
     AboutUsComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    DashboardComponent,
+    AContactUsComponent,
+    AContactUsDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +42,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     BrowserAnimationsModule,
     AngularMaterialModule,
     IvyCarouselModule,
+    ReactiveFormsModule,
+    HttpClientModule,
     NgbModule,
   ],
   providers: [],
