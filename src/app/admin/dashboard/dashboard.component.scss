@@ -1,0 +1,11 @@
+ul {
+    cursor: pointer;
+    & li {
+        padding: 1rem;
+        color: #EFEFEF;
+
+        &:hover {
+            background: #136FA1;
+        }
+    }
+}

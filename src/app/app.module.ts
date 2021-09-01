@@ -3,17 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarComponent } from './user/navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './angular-material.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { CarouselComponent } from './carousel/carousel.component';
+import { CarouselComponent } from './shared/carousel/carousel.component';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
-import { HomeComponent } from './home/home.component';
-import { FooterComponent } from './footer/footer.component';
-import { OurServicesComponent } from './our-services/our-services.component';
-import { AboutUsComponent } from './about-us/about-us.component';
-import { ContactUsComponent } from './contact-us/contact-us.component';
+import { HomeComponent } from './user/home/home.component';
+import { FooterComponent } from './user/footer/footer.component';
+import { OurServicesComponent } from './user/our-services/our-services.component';
+import { AboutUsComponent } from './user/about-us/about-us.component';
+import { ContactUsComponent } from './user/contact-us/contact-us.component';
 import { HttpClientModule } from '@angular/common/http';
 import {ReactiveFormsModule} from '@angular/forms';
 /** Admin Components */
