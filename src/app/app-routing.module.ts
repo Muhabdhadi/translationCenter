@@ -9,6 +9,7 @@ import { AContactUsComponent } from './admin/dashboard/a-contact-us/a-contact-us
 import {AContactUsDetailsComponent} from './admin/dashboard/a-contact-us/a-contact-us-details/a-contact-us-details.component';
 import {UserComponent} from './user/user.component';
 import {QuotesComponent} from './admin/dashboard/quotes/quotes.component';
+import {AAboutUsComponent} from './admin/dashboard/a-about-us/a-about-us.component';
 
 const routes: Routes = [
     { path: '', redirectTo: 'user/home', pathMatch: 'full' },
@@ -23,7 +24,8 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent, children: [
       { path: 'contact-us', component: AContactUsComponent },
       { path: 'contactus-details', component: AContactUsDetailsComponent }, // it has a params
-      { path: 'quotes', component: QuotesComponent }
+      { path: 'quotes', component: QuotesComponent },
+      { path: 'aboutus', component: AAboutUsComponent }
     ]}
 
 ];

@@ -15,7 +15,8 @@ import { OurServicesComponent } from './user/our-services/our-services.component
 import { AboutUsComponent } from './user/about-us/about-us.component';
 import { ContactUsComponent } from './user/contact-us/contact-us.component';
 import { HttpClientModule } from '@angular/common/http';
-import {ReactiveFormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 /** Admin Components */
 import { DashboardComponent} from './admin/dashboard/dashboard.component';
 import { AContactUsComponent} from './admin/dashboard/a-contact-us/a-contact-us.component';
@@ -24,6 +25,7 @@ import {UserComponent} from './user/user.component';
 import {QuotesComponent} from './admin/dashboard/quotes/quotes.component';
 import {AddQuotesComponent} from './admin/dashboard/quotes/add-quotes/add-quotes.component';
 import {ViewQuotesComponent} from './admin/dashboard/quotes/view-quotes/view-quotes.component';
+import {AAboutUsComponent} from './admin/dashboard/a-about-us/a-about-us.component';
 
 
 @NgModule({
@@ -42,7 +44,8 @@ import {ViewQuotesComponent} from './admin/dashboard/quotes/view-quotes/view-quo
     UserComponent,
     QuotesComponent,
     AddQuotesComponent,
-    ViewQuotesComponent
+    ViewQuotesComponent,
+    AAboutUsComponent
   ],
   imports: [
     BrowserModule,
@@ -53,6 +56,8 @@ import {ViewQuotesComponent} from './admin/dashboard/quotes/view-quotes/view-quo
     ReactiveFormsModule,
     HttpClientModule,
     NgbModule,
+    CKEditorModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

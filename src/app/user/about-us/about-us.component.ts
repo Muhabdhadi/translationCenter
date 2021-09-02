@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {ReqService} from '../../shared/services/req.service';
+import {Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-about-us',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutUsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private reqService: ReqService, private titleService: Title) {
+  }
 
   ngOnInit(): void {
+      this.titleService.setTitle('Dindo-lock | About us');
+      this.reqService.getAboutUs().subscribe((aboutUsData) => {
+          document.querySelector('.aboutus__container__p').innerHTML = aboutUsData.aboutUs;
+      });
   }
 
 }
