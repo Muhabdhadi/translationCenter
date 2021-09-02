@@ -1,0 +1,8 @@
+<div class="text-center pt-4">
+    <button style="margin-right: 1rem" (click)="onChangeView('viewQuote')" class="btn btn-dark">View Quotes</button>
+    <button (click)="onChangeView('addQuote')" class="btn btn-success">Add Quotes</button>
+</div>
+
+<app-add-quotes *ngIf="view === 'addQuote'"></app-add-quotes>
+
+<app-view-quotes *ngIf="view === 'viewQuote'"></app-view-quotes>

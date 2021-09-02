@@ -21,6 +21,9 @@ import { DashboardComponent} from './admin/dashboard/dashboard.component';
 import { AContactUsComponent} from './admin/dashboard/a-contact-us/a-contact-us.component';
 import { AContactUsDetailsComponent} from './admin/dashboard/a-contact-us/a-contact-us-details/a-contact-us-details.component';
 import {UserComponent} from './user/user.component';
+import {QuotesComponent} from './admin/dashboard/quotes/quotes.component';
+import {AddQuotesComponent} from './admin/dashboard/quotes/add-quotes/add-quotes.component';
+import {ViewQuotesComponent} from './admin/dashboard/quotes/view-quotes/view-quotes.component';
 
 
 @NgModule({
@@ -36,7 +39,10 @@ import {UserComponent} from './user/user.component';
     DashboardComponent,
     AContactUsComponent,
     AContactUsDetailsComponent,
-    UserComponent
+    UserComponent,
+    QuotesComponent,
+    AddQuotesComponent,
+    ViewQuotesComponent
   ],
   imports: [
     BrowserModule,

@@ -1,14 +1,15 @@
-import {Injectable} from '@angular/core';
-import {HttpClient, HttpParams} from '@angular/common/http';
-import {Observable} from 'rxjs';
-import {map} from 'rxjs/operators';
+import { Injectable } from '@angular/core';
+import { HttpClient, HttpParams } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
+import { FirebaseResponseService } from '../helper/firebaseResponseService';
 
 @Injectable({
   providedIn: 'root',
 })
 
 export class ReqService {
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private firebaseResponseService: FirebaseResponseService) {}
 
   postAboutUs(): Observable<any> {
     const aboutUser = {
@@ -41,4 +42,14 @@ export class ReqService {
           }
       }));
   }
+
+  postQuote(quote: any): any {
+      return this.http.put(`https://ng-complete-guide-2.firebaseio.com/quotes.json`, quote);
+  }
+
+  getQuotes(): any {
+        return this.http.get(`https://ng-complete-guide-2.firebaseio.com/quotes.json`).pipe(map(quoteObject => {
+            return this.firebaseResponseService.convertFirebaseResponseObject(quoteObject);
+        }));
+    }
 }

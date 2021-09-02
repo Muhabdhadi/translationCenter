@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ReqService} from '../../services/req.service';
+import {ReqService} from '../../../shared/services/req.service';
 import {map} from 'rxjs/operators';
 import {Observable} from 'rxjs';
 

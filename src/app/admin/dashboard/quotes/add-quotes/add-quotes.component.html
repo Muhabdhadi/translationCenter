@@ -1,0 +1,25 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div [formGroup]="form">
+                <ng-container formArrayName="quotes">
+                    <ng-container *ngFor="let quoteFrom of quotes.controls; let i = index">
+
+                        <div class="form-group" [formGroup]="quoteFrom">
+                            <label for="quotes">Quotes:</label>
+                            <textarea formControlName="quote" class="form-control mt-2" id="quotes" rows="3"></textarea>
+                            <button (click)="deleteQuote(i)" class="btn btn-danger mt-2">Delete</button>
+                        </div>
+
+                    </ng-container>
+                </ng-container>
+
+
+                <button (click)="addQuote()" type="submit" class="btn btn-success mt-5">Add</button>
+                <button style="margin-left: 1rem" (click)="createQuotes()" type="submit" class="btn btn-secondary mt-5 ">Send</button>
+
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder} from '@angular/forms';
-import {ReqService} from '../../admin/services/req.service';
+import {ReqService} from '../../shared/services/req.service';
 
 @Component({
   selector: 'app-contact-us',

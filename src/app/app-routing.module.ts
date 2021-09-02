@@ -8,6 +8,7 @@ import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { AContactUsComponent } from './admin/dashboard/a-contact-us/a-contact-us.component';
 import {AContactUsDetailsComponent} from './admin/dashboard/a-contact-us/a-contact-us-details/a-contact-us-details.component';
 import {UserComponent} from './user/user.component';
+import {QuotesComponent} from './admin/dashboard/quotes/quotes.component';
 
 const routes: Routes = [
     { path: '', redirectTo: 'user/home', pathMatch: 'full' },
@@ -21,7 +22,8 @@ const routes: Routes = [
 
   { path: 'dashboard', component: DashboardComponent, children: [
       { path: 'contact-us', component: AContactUsComponent },
-      { path: 'contactus-details', component: AContactUsDetailsComponent } // it has a params
+      { path: 'contactus-details', component: AContactUsDetailsComponent }, // it has a params
+      { path: 'quotes', component: QuotesComponent }
     ]}
 
 ];
